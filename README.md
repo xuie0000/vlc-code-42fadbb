@@ -39,7 +39,7 @@ $ cd vlc-android
 $ ./compile.sh
 $ ./compile.sh release
 
-**遇到错误(网络不行)时，去https://download.videolan.org/contrib/下载同名的安装名放在vlc-android/vlc/contrib/tarballs目录下**
+**遇到错误(网络不行)时，去https://download.videolan.org/contrib/ 下载同名的安装名放在vlc-android/vlc/contrib/tarballs目录下**
 
 - 导入`android studio`运行成功
 
@@ -312,8 +312,8 @@ Information:0 warnings
 Information:See complete output in console
 ```
 
-参考：
-http://xuie0000.com/2015/11/01/ubuntu-15-04-%E7%BC%96%E8%AF%91Android-VLC/
-https://wiki.videolan.org/AndroidCompile
-https://download.videolan.org/contrib/
-http://stackoverflow.com/questions/33021089/compiling-vlc-android-ubuntu
+参考：  
+http://xuie0000.com/2015/11/01/ubuntu-15-04-%E7%BC%96%E8%AF%91Android-VLC/  
+https://wiki.videolan.org/AndroidCompile  
+https://download.videolan.org/contrib/  
+http://stackoverflow.com/questions/33021089/compiling-vlc-android-ubuntu  

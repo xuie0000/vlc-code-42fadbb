@@ -11,17 +11,19 @@ android {
         disable 'MissingTranslation', 'ExtraTranslation'
     }
 
-    task luaPlaylistCopy(type: Copy) {
-        from '../vlc/share/lua/playlist'
-        into 'assets/lua/playlist'
-        exclude '**/*.txt'
-    }
+    // change - 20160511
+//    task luaPlaylistCopy(type: Copy) {
+//        from '../vlc/share/lua/playlist'
+//        into 'assets/lua/playlist'
+//        exclude '**/*.txt'
+//    }
 
-    task luaMetaCopy(type: Copy) {
-        from '../vlc/share/lua/meta'
-        into 'assets/lua/meta'
-        exclude '**/*.txt'
-    }
+    // change - 20160511
+//    task luaMetaCopy(type: Copy) {
+//        from '../vlc/share/lua/meta'
+//        into 'assets/lua/meta'
+//        exclude '**/*.txt'
+//    }
 
     dataBinding {
         enabled = true
@@ -35,12 +37,13 @@ android {
         resValue "string", "build_revision", revision()
         resValue "string", "build_vlc_revision", vlcRevision()
 
-        tasks.whenTaskAdded { task ->
-            if (task.name.startsWith('assemble')) {
-                task.dependsOn luaPlaylistCopy
-                task.dependsOn luaMetaCopy
-            }
-        }
+        // change - 20160511
+//        tasks.whenTaskAdded { task ->
+//            if (task.name.startsWith('assemble')) {
+//                task.dependsOn luaPlaylistCopy
+//                task.dependsOn luaMetaCopy
+//            }
+//        }
 
         //Set the build ABI according to build types only if not launched from compile.sh
         if (System.getenv('PASSWORD_KEYSTORE') == null)

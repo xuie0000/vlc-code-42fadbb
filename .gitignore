@@ -38,7 +38,8 @@ java-libs/appcompat/.project
 gradle.properties
 gradlew.bat
 gradlew
-gradle/
+# change - 20160511
+#gradle/
 .gradle/
 build/
 vlc-android/build/

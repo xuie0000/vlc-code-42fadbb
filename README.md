@@ -3,6 +3,13 @@ vlc源代码
 
 编译于2016年5月11号，git下来用android studio运行
 
+add gradle.properties
+```
+keyStoreFile=/home/xxx/.android/debug.keystore
+storealias=androiddebugkey
+storepwd=android
+```
+
 vlc源代码编译
 ---
 
